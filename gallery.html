@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Photo Gallery | ABC College of Engineering</title>
+  <meta name="description" content="Visual tour of ABC College of Engineering campus, research facilities, auditoriums, and athletic infrastructure in Jaipur.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Campus contacts">
+    <div class="container">
+      <div class="top-bar-contact">
+        <span>📍 Sitapura Industrial Area, Jaipur, Rajasthan 302022</span>
+        <span>📞 +91 141 277 0000</span>
+        <span>✉️ gallery@abccollege.edu.in</span>
+      </div>
+      <div class="top-bar-notice">
+        40-Acre Green Campus · Smart Classrooms & High-Speed Wi-Fi
+      </div>
+    </div>
+  </aside>
+
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <img src="images/college-logo.png" alt="ABC College Crest Logo" class="brand-logo">
+        <div class="brand-text">
+          <h1>ABC COLLEGE</h1>
+          <p>OF ENGINEERING · JAIPUR</p>
+        </div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-switch" role="switch" aria-checked="false" aria-label="Switch visual theme" title="Switch visual theme">
+          <span class="switch-track">
+            <span class="switch-icon switch-icon-sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4.5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+            <span class="switch-icon switch-icon-moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+            <span class="switch-thumb"></span>
+          </span>
+        </button>
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <section class="section section-muted" style="padding: 3rem 0;">
+      <div class="container">
+        <h1 class="section-title">Campus Life & Architecture Gallery</h1>
+        <p class="section-desc">Click any campus photograph to launch the high-resolution lightbox view.</p>
+      </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="sr-only">Campus Landmarks &amp; Facilities Gallery</h2>
+        <div class="gallery-grid">
+
+          <div class="gallery-item" data-caption="Main Administrative Block & Historic Clock Tower">
+            <img src="images/campus-hero.png" alt="Main Administrative Block and Clock Tower Facade">
+            <div class="gallery-overlay">
+              <h3>Administrative Block</h3>
+              <p>Iconic architectural facade and landscaped lawns</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-caption="Central Digital Library & Research Reading Hall">
+            <img src="images/library.png" alt="Central Digital Library with 50,000+ Volumes">
+            <div class="gallery-overlay">
+              <h3>Central Library</h3>
+              <p>50,000+ engineering titles, journals & quiet carrels</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-caption="Advanced Computing & Artificial Intelligence Research Lab">
+            <img src="images/lab.png" alt="AI and Machine Learning Workstations">
+            <div class="gallery-overlay">
+              <h3>AI & Computing Laboratory</h3>
+              <p>High-performance GPU compute clusters</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-caption="Rabindranath Tagore Convocation Auditorium">
+            <img src="images/auditorium.png" alt="Tagore Convocation Auditorium Stage">
+            <div class="gallery-overlay">
+              <h3>Tagore Auditorium</h3>
+              <p>1,500-seat acoustic amphitheater and stage</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-caption="Olympic Standard Athletic Running Track & Football Stadium">
+            <img src="images/sports.png" alt="Olympic Athletic Arena and Running Track">
+            <div class="gallery-overlay">
+              <h3>Sports Complex</h3>
+              <p>All-weather synthetic tracks & multi-sport turf</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-caption="Modern Student Residential Hostels & Wi-Fi Campus">
+            <img src="images/hostel.png" alt="Modern Student Residential Towers">
+            <div class="gallery-overlay">
+              <h3>Student Residences</h3>
+              <p>Twin residential towers with dining & amenities</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal Component -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Enlarged campus photo view">
+    <div class="lightbox-card">
+      <button id="lightboxClose" class="lightbox-close" aria-label="Close image preview">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Enlarged Campus View">
+      </div>
+      <div class="lightbox-footer">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>ABC College of Engineering</h3>
+        <p class="footer-desc">
+          Established in 1998, ABC College of Engineering is recognized for pioneering research, top tier campus placement records, and comprehensive student development in Rajasthan.
+        </p>
+        <p class="footer-desc"><strong>Accreditations:</strong> NAAC 'A+' Grade · AICTE Approved · RTU Affiliated</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Institution</a></li>
+          <li><a href="courses.html">Degree Programs</a></li>
+          <li><a href="admissions.html">Admissions 2026</a></li>
+          <li><a href="faculty.html">Faculty Directory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul class="footer-links">
+          <li><a href="courses.html">Computer Science & Engg</a></li>
+          <li><a href="courses.html">Artificial Intelligence & DS</a></li>
+          <li><a href="courses.html">Information Technology</a></li>
+          <li><a href="courses.html">Computer Applications (MCA)</a></li>
+          <li><a href="courses.html">Basic Sciences & Humanities</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Campus Office</h4>
+        <p class="footer-desc">
+          ABC College Campus<br>
+          Sitapura Industrial Area, Tonk Road<br>
+          Jaipur, Rajasthan — 302022
+        </p>
+        <p class="footer-desc">
+          <strong>Phone:</strong> +91 141 277 0000<br>
+          <strong>Email:</strong> info@abccollege.edu.in
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 ABC College of Engineering, Jaipur. All rights reserved.</p>
+      <p class="student-credit">Made by Krish Charan MCA I Sem 26JPSTDDMC053</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Scroll to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

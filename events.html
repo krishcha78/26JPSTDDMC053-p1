@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Events & Technical Conferences | ABC College of Engineering</title>
+  <meta name="description" content="Discover upcoming hackathons, technical conferences, cultural festivals, and past symposiums at ABC College of Engineering, Jaipur.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Campus contacts">
+    <div class="container">
+      <div class="top-bar-contact">
+        <span>📍 Sitapura Industrial Area, Jaipur, Rajasthan 302022</span>
+        <span>📞 +91 141 277 0000</span>
+        <span>✉️ events@abccollege.edu.in</span>
+      </div>
+      <div class="top-bar-notice">
+        Registrations Active for National Hackathon 'CodeGenesis 2026'
+      </div>
+    </div>
+  </aside>
+
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <img src="images/college-logo.png" alt="ABC College Crest Logo" class="brand-logo">
+        <div class="brand-text">
+          <h1>ABC COLLEGE</h1>
+          <p>OF ENGINEERING · JAIPUR</p>
+        </div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-switch" role="switch" aria-checked="false" aria-label="Switch visual theme" title="Switch visual theme">
+          <span class="switch-track">
+            <span class="switch-icon switch-icon-sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4.5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+            <span class="switch-icon switch-icon-moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+            <span class="switch-thumb"></span>
+          </span>
+        </button>
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <section class="section section-muted" style="padding: 3rem 0;">
+      <div class="container">
+        <h1 class="section-title">Events & Technical Symposia</h1>
+        <p class="section-desc">Explore flagship hackathons, IEEE symposiums, cultural galas, and athletic championships hosted at ABC College.</p>
+      </div>
+    </section>
+
+    <!-- Events Section with Tab Switcher -->
+    <section class="section">
+      <div class="container">
+        
+        <!-- Tab Controls -->
+        <div class="tab-container" role="tablist" aria-label="Event categories">
+          <button class="tab-btn active" data-tab="upcomingEvents" role="tab" aria-selected="true">Upcoming Events (4)</button>
+          <button class="tab-btn" data-tab="pastEvents" role="tab" aria-selected="false">Past Highlights (4)</button>
+        </div>
+
+        <!-- Tab 1: Upcoming Events -->
+        <div id="upcomingEvents" class="tab-content active" role="tabpanel">
+          <div class="card-grid">
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img src="images/lab.png" alt="CodeGenesis Hackathon">
+              </div>
+              <div class="card-body">
+                <span class="card-category">National Hackathon · 36 Hours</span>
+                <h2 class="card-title">CodeGenesis 2026: National Student Hackathon</h2>
+                <p class="card-text">Inter-collegiate programming contest challenging student innovators to engineer solutions across Generative AI, Sustainable Energy, and Smart Cities.</p>
+                <ul class="card-meta-list">
+                  <li><span>Date:</span> <strong>November 14–15, 2026</strong></li>
+                  <li><span>Venue:</span> <strong>Central Computing Labs, Tech Block</strong></li>
+                  <li><span>Prize Pool:</span> <strong>₹3,50,000 Cash Prizes</strong></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm">Register Team Now</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img src="images/auditorium.png" alt="ICAAI Conference">
+              </div>
+              <div class="card-body">
+                <span class="card-category">International Conference</span>
+                <h2 class="card-title">ICAAI-2026: Applied Artificial Intelligence</h2>
+                <p class="card-text">Peer-reviewed academic symposium featuring keynote addresses from global AI scientists, paper presentations, and research demonstrations.</p>
+                <ul class="card-meta-list">
+                  <li><span>Date:</span> <strong>December 08–09, 2026</strong></li>
+                  <li><span>Venue:</span> <strong>Tagore Convocation Auditorium</strong></li>
+                  <li><span>Proceedings:</span> <strong>Scopus Indexed Publication</strong></li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline btn-sm">Submit Research Paper</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img src="images/campus-hero.png" alt="Annual Fest Aura">
+              </div>
+              <div class="card-body">
+                <span class="card-category">Cultural Gala · 3 Days</span>
+                <h2 class="card-title">Aura 2027: Annual National Techno-Cultural Fest</h2>
+                <p class="card-text">Three days of technical expos, robotics battles, esports tournaments, live musical performances, and inter-college literary debates.</p>
+                <ul class="card-meta-list">
+                  <li><span>Date:</span> <strong>January 22–24, 2027</strong></li>
+                  <li><span>Venue:</span> <strong>Main Campus Grounds & Amphitheater</strong></li>
+                  <li><span>Participation:</span> <strong>Open to All Indian Universities</strong></li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline btn-sm">Festival Guidelines</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img src="images/library.png" alt="Google Cloud Workshop">
+              </div>
+              <div class="card-body">
+                <span class="card-category">Technical Workshop</span>
+                <h2 class="card-title">Google Cloud & Kubernetes Hands-On Boot Camp</h2>
+                <p class="card-text">Intensive training led by certified Google Cloud architects on deploying serverless microservices, container security, and BigQuery analytics.</p>
+                <ul class="card-meta-list">
+                  <li><span>Date:</span> <strong>February 12, 2027</strong></li>
+                  <li><span>Venue:</span> <strong>Seminar Hall B, CS Department</strong></li>
+                  <li><span>Certification:</span> <strong>Official GCP Completion Certificate</strong></li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline btn-sm">Reserve Seat</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Tab 2: Past Events -->
+        <div id="pastEvents" class="tab-content" role="tabpanel">
+          <div class="card-grid">
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img src="images/lab.png" alt="Smart India Hackathon">
+              </div>
+              <div class="card-body">
+                <span class="card-category">Internal Hackathon Finale</span>
+                <h2 class="card-title">Smart India Hackathon 2026 Campus Finale</h2>
+                <p class="card-text">Over 65 student teams competed in a grueling 24-hour hackathon. Five outstanding solutions were selected to represent ABC College at the national Grand Finale.</p>
+                <ul class="card-meta-list">
+                  <li><span>Date:</span> <strong>September 18, 2026</strong></li>
+                  <li><span>Outcome:</span> <strong>5 Teams Nominated for Grand Finale</strong></li>
+                </ul>
+                <span class="badge" style="color: var(--success); font-weight: 700; font-size: 0.85rem;">✓ Completed with Distinction</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img src="images/auditorium.png" alt="25th Convocation Ceremony">
+              </div>
+              <div class="card-body">
+                <span class="card-category">Graduation Convocation</span>
+                <h2 class="card-title">25th Annual Graduation Convocation 2026</h2>
+                <p class="card-text">Conferred degrees upon 1,120 graduating engineers and postgraduate scholars, with Padma Shri Dr. K. Radhakrishnan delivering the convocation address.</p>
+                <ul class="card-meta-list">
+                  <li><span>Date:</span> <strong>July 20, 2026</strong></li>
+                  <li><span>Venue:</span> <strong>Tagore Auditorium</strong></li>
+                </ul>
+                <span class="badge" style="color: var(--success); font-weight: 700; font-size: 0.85rem;">✓ 1,120 Degrees Awarded</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img src="images/campus-hero.png" alt="Industry Conclave">
+              </div>
+              <div class="card-body">
+                <span class="card-category">Industry Conclave</span>
+                <h2 class="card-title">Industry-Academia Conclave on Autonomous Tech</h2>
+                <p class="card-text">CTOs and engineering leaders from 24 tech enterprises met with university curriculum committees to align B.Tech electives with current AI industry expectations.</p>
+                <ul class="card-meta-list">
+                  <li><span>Date:</span> <strong>May 10, 2026</strong></li>
+                  <li><span>Delegates:</span> <strong>24 Tech Corporates Participated</strong></li>
+                </ul>
+                <span class="badge" style="color: var(--success); font-weight: 700; font-size: 0.85rem;">✓ 8 New MOUs Signed</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img src="images/sports.png" alt="Inter-College Sports Tournament">
+              </div>
+              <div class="card-body">
+                <span class="card-category">Sports Championship</span>
+                <h2 class="card-title">State-Level Inter-Collegiate Sports Trophy</h2>
+                <p class="card-text">ABC College hosted 18 engineering institutes in cricket, basketball, volleyball, and athletics, winning the overall institutional championship trophy.</p>
+                <ul class="card-meta-list">
+                  <li><span>Date:</span> <strong>February 24–27, 2026</strong></li>
+                  <li><span>Venue:</span> <strong>Olympic Athletic Arena</strong></li>
+                </ul>
+                <span class="badge" style="color: var(--success); font-weight: 700; font-size: 0.85rem;">✓ Overall Champions Trophy</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>ABC College of Engineering</h3>
+        <p class="footer-desc">
+          Established in 1998, ABC College of Engineering is recognized for pioneering research, top tier campus placement records, and comprehensive student development in Rajasthan.
+        </p>
+        <p class="footer-desc"><strong>Accreditations:</strong> NAAC 'A+' Grade · AICTE Approved · RTU Affiliated</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Institution</a></li>
+          <li><a href="courses.html">Degree Programs</a></li>
+          <li><a href="admissions.html">Admissions 2026</a></li>
+          <li><a href="faculty.html">Faculty Directory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul class="footer-links">
+          <li><a href="courses.html">Computer Science & Engg</a></li>
+          <li><a href="courses.html">Artificial Intelligence & DS</a></li>
+          <li><a href="courses.html">Information Technology</a></li>
+          <li><a href="courses.html">Computer Applications (MCA)</a></li>
+          <li><a href="courses.html">Basic Sciences & Humanities</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Campus Office</h4>
+        <p class="footer-desc">
+          ABC College Campus<br>
+          Sitapura Industrial Area, Tonk Road<br>
+          Jaipur, Rajasthan — 302022
+        </p>
+        <p class="footer-desc">
+          <strong>Phone:</strong> +91 141 277 0000<br>
+          <strong>Email:</strong> info@abccollege.edu.in
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 ABC College of Engineering, Jaipur. All rights reserved.</p>
+      <p class="student-credit">Made by Krish Charan MCA I Sem 26JPSTDDMC053</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Scroll to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Degree Programs & Courses | ABC College of Engineering</title>
+  <meta name="description" content="Explore undergraduate and postgraduate programs in AI, Data Science, Computer Science, and IT at ABC College of Engineering, Jaipur.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Campus contacts">
+    <div class="container">
+      <div class="top-bar-contact">
+        <span>📍 Sitapura Industrial Area, Jaipur, Rajasthan 302022</span>
+        <span>📞 +91 141 277 0000</span>
+        <span>✉️ admissions@abccollege.edu.in</span>
+      </div>
+      <div class="top-bar-notice">
+        Session 2026-27 Enrollment Open · Merit Scholarships Available
+      </div>
+    </div>
+  </aside>
+
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <img src="images/college-logo.png" alt="ABC College Crest Logo" class="brand-logo">
+        <div class="brand-text">
+          <h1>ABC COLLEGE</h1>
+          <p>OF ENGINEERING · JAIPUR</p>
+        </div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-switch" role="switch" aria-checked="false" aria-label="Switch visual theme" title="Switch visual theme">
+          <span class="switch-track">
+            <span class="switch-icon switch-icon-sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4.5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+            <span class="switch-icon switch-icon-moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+            <span class="switch-thumb"></span>
+          </span>
+        </button>
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <section class="section section-muted" style="padding: 3rem 0;">
+      <div class="container">
+        <h1 class="section-title">Academic Degree Programs</h1>
+        <p class="section-desc">Industry-accredited undergraduate, postgraduate, and doctoral curricula built for practical mastery and engineering leadership.</p>
+      </div>
+    </section>
+
+    <!-- Live Search & Department Filter Bar -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="filter-bar">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="courseSearch" class="search-input" placeholder="Search courses by keyword, specialization, or curriculum topic..." aria-label="Search courses">
+          </div>
+          <div class="filter-buttons" role="group" aria-label="Filter courses by department">
+            <button class="filter-btn active" data-filter="all">All Disciplines</button>
+            <button class="filter-btn" data-filter="cse">Computer Science (CSE)</button>
+            <button class="filter-btn" data-filter="aids">AI & Data Science</button>
+            <button class="filter-btn" data-filter="it">Computer Applications (BCA / MCA)</button>
+            <button class="filter-btn" data-filter="mtech">Postgraduate & Doctoral</button>
+          </div>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="card-grid" id="courseGrid">
+
+          <!-- Course 1 -->
+          <article class="card course-card" data-department="aids">
+            <div class="card-img-wrap">
+              <img src="images/lab.png" alt="AI & Data Science Computing Cluster">
+            </div>
+            <div class="card-body">
+              <span class="card-category">B.Tech · AI & Data Science</span>
+              <h2 class="card-title">B.Tech in Artificial Intelligence & Data Science</h2>
+              <p class="card-text">Comprehensive immersion into deep neural networks, computer vision, natural language processing, reinforcement learning, and big data pipeline engineering.</p>
+              <ul class="card-meta-list">
+                <li><span>Duration:</span> <strong>4 Years (8 Semesters)</strong></li>
+                <li><span>Eligibility:</span> <strong>10+2 with PCM (Min. 60% Marks)</strong></li>
+                <li><span>Tuition Fee:</span> <strong>₹1,45,000 / Year</strong></li>
+                <li><span>Intake Capacity:</span> <strong>120 Seats</strong></li>
+              </ul>
+              <a href="admissions.html" class="btn btn-primary btn-sm">Apply for B.Tech AI & DS</a>
+            </div>
+          </article>
+
+          <!-- Course 2 -->
+          <article class="card course-card" data-department="cse">
+            <div class="card-img-wrap">
+              <img src="images/library.png" alt="Computer Science Software Systems">
+            </div>
+            <div class="card-body">
+              <span class="card-category">B.Tech · Computer Science</span>
+              <h2 class="card-title">B.Tech in Computer Science & Engineering</h2>
+              <p class="card-text">Strong foundation in algorithms, compiler design, computer architecture, distributed databases, cloud computing, and full-stack software development.</p>
+              <ul class="card-meta-list">
+                <li><span>Duration:</span> <strong>4 Years (8 Semesters)</strong></li>
+                <li><span>Eligibility:</span> <strong>10+2 with PCM (Min. 60% Marks)</strong></li>
+                <li><span>Tuition Fee:</span> <strong>₹1,40,000 / Year</strong></li>
+                <li><span>Intake Capacity:</span> <strong>180 Seats</strong></li>
+              </ul>
+              <a href="admissions.html" class="btn btn-primary btn-sm">Apply for B.Tech CSE</a>
+            </div>
+          </article>
+
+          <!-- Course 3 -->
+          <article class="card course-card" data-department="cse">
+            <div class="card-img-wrap">
+              <img src="images/campus-hero.png" alt="Cyber Security Engineering">
+            </div>
+            <div class="card-body">
+              <span class="card-category">B.Tech · Cyber Security</span>
+              <h2 class="card-title">B.Tech in CSE (Cyber Security & Forensics)</h2>
+              <p class="card-text">Specialized focus on network defenses, cryptography, ethical hacking, digital forensics, cloud security protocols, and secure system design.</p>
+              <ul class="card-meta-list">
+                <li><span>Duration:</span> <strong>4 Years (8 Semesters)</strong></li>
+                <li><span>Eligibility:</span> <strong>10+2 with PCM (Min. 60% Marks)</strong></li>
+                <li><span>Tuition Fee:</span> <strong>₹1,40,000 / Year</strong></li>
+                <li><span>Intake Capacity:</span> <strong>60 Seats</strong></li>
+              </ul>
+              <a href="admissions.html" class="btn btn-primary btn-sm">Apply for Cyber Security</a>
+            </div>
+          </article>
+
+          <!-- Course 4 -->
+          <article class="card course-card" data-department="it">
+            <div class="card-img-wrap">
+              <img src="images/lab.png" alt="BCA Programming Workstations">
+            </div>
+            <div class="card-body">
+              <span class="card-category">Undergraduate · Computer Applications</span>
+              <h2 class="card-title">Bachelor of Computer Applications (BCA)</h2>
+              <p class="card-text">Focuses on practical application development, object-oriented programming (Java/Python), database administration, web technologies, and software testing.</p>
+              <ul class="card-meta-list">
+                <li><span>Duration:</span> <strong>3 Years (6 Semesters)</strong></li>
+                <li><span>Eligibility:</span> <strong>10+2 Any Stream with Maths/CS (50%+)</strong></li>
+                <li><span>Tuition Fee:</span> <strong>₹75,000 / Year</strong></li>
+                <li><span>Intake Capacity:</span> <strong>120 Seats</strong></li>
+              </ul>
+              <a href="admissions.html" class="btn btn-primary btn-sm">Apply for BCA</a>
+            </div>
+          </article>
+
+          <!-- Course 5 -->
+          <article class="card course-card" data-department="it">
+            <div class="card-img-wrap">
+              <img src="images/auditorium.png" alt="Master of Computer Applications">
+            </div>
+            <div class="card-body">
+              <span class="card-category">Postgraduate · Computer Applications</span>
+              <h2 class="card-title">Master of Computer Applications (MCA)</h2>
+              <p class="card-text">Advanced computing course emphasizing cloud microservices, DevOps pipelines, distributed databases, mobile application frameworks, and enterprise software architecture.</p>
+              <ul class="card-meta-list">
+                <li><span>Duration:</span> <strong>2 Years (4 Semesters)</strong></li>
+                <li><span>Eligibility:</span> <strong>BCA / B.Sc. with Maths (Min. 55% Marks)</strong></li>
+                <li><span>Tuition Fee:</span> <strong>₹95,000 / Year</strong></li>
+                <li><span>Intake Capacity:</span> <strong>90 Seats</strong></li>
+              </ul>
+              <a href="admissions.html" class="btn btn-primary btn-sm">Apply for MCA</a>
+            </div>
+          </article>
+
+          <!-- Course 6 -->
+          <article class="card course-card" data-department="mtech">
+            <div class="card-img-wrap">
+              <img src="images/library.png" alt="M.Tech Postgraduate Research">
+            </div>
+            <div class="card-body">
+              <span class="card-category">Postgraduate · Master of Technology</span>
+              <h2 class="card-title">M.Tech in Artificial Intelligence & Machine Learning</h2>
+              <p class="card-text">Rigorous research-driven program dedicated to algorithmic design, statistical learning theory, natural language understanding, and autonomous decision systems.</p>
+              <ul class="card-meta-list">
+                <li><span>Duration:</span> <strong>2 Years (4 Semesters)</strong></li>
+                <li><span>Eligibility:</span> <strong>B.Tech / B.E. in relevant branch with GATE / CAM</strong></li>
+                <li><span>Tuition Fee:</span> <strong>₹1,10,000 / Year</strong></li>
+                <li><span>Intake Capacity:</span> <strong>30 Seats</strong></li>
+              </ul>
+              <a href="admissions.html" class="btn btn-primary btn-sm">Apply for M.Tech AI</a>
+            </div>
+          </article>
+
+          <!-- Course 7 -->
+          <article class="card course-card" data-department="mtech">
+            <div class="card-img-wrap">
+              <img src="images/sports.png" alt="M.Tech Computer Science Systems">
+            </div>
+            <div class="card-body">
+              <span class="card-category">Postgraduate · Master of Technology</span>
+              <h2 class="card-title">M.Tech in Computer Science & Engineering</h2>
+              <p class="card-text">Advanced computing systems, high performance cluster computing, fault-tolerant networks, and formal methods in software engineering.</p>
+              <ul class="card-meta-list">
+                <li><span>Duration:</span> <strong>2 Years (4 Semesters)</strong></li>
+                <li><span>Eligibility:</span> <strong>B.Tech / B.E. in CSE / IT with GATE / CAM score</strong></li>
+                <li><span>Tuition Fee:</span> <strong>₹1,05,000 / Year</strong></li>
+                <li><span>Intake Capacity:</span> <strong>30 Seats</strong></li>
+              </ul>
+              <a href="admissions.html" class="btn btn-primary btn-sm">Apply for M.Tech CSE</a>
+            </div>
+          </article>
+
+          <!-- Course 8 -->
+          <article class="card course-card" data-department="mtech">
+            <div class="card-img-wrap">
+              <img src="images/hostel.png" alt="Doctoral Research Laboratory">
+            </div>
+            <div class="card-body">
+              <span class="card-category">Doctoral Program · Ph.D.</span>
+              <h2 class="card-title">Ph.D. in Computer Science & Engineering</h2>
+              <p class="card-text">Advanced doctoral scholarship with full research fellowship support, funded laboratory access, and mentorship by senior professors in applied computer science.</p>
+              <ul class="card-meta-list">
+                <li><span>Duration:</span> <strong>3 to 5 Years</strong></li>
+                <li><span>Eligibility:</span> <strong>M.Tech / M.E. / MCA with Min. 60% Marks</strong></li>
+                <li><span>Tuition Fee:</span> <strong>Fellowship Supported</strong></li>
+                <li><span>Intake Capacity:</span> <strong>12 Research Fellows</strong></li>
+              </ul>
+              <a href="admissions.html" class="btn btn-primary btn-sm">Apply for Ph.D.</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Empty search result message -->
+        <div id="noCoursesMessage" style="display: none; text-align: center; padding: 4rem 1rem;">
+          <h3 style="font-size: 1.5rem; color: var(--text-main); margin-bottom: 0.5rem;">No Matching Programs Found</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Try refining your search keyword or clearing the department filter.</p>
+          <button class="btn btn-outline btn-sm" onclick="document.getElementById('courseSearch').value=''; document.querySelector('.filter-btn[data-filter=all]').click();">Reset Filters</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <h2 class="sr-only">Footer Directory and Campus Links</h2>
+      <div class="footer-col">
+        <h3>ABC College of Engineering</h3>
+        <p class="footer-desc">
+          Established in 1998, ABC College of Engineering is recognized for pioneering research, top tier campus placement records, and comprehensive student development in Rajasthan.
+        </p>
+        <p class="footer-desc"><strong>Accreditations:</strong> NAAC 'A+' Grade · AICTE Approved · RTU Affiliated</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Institution</a></li>
+          <li><a href="courses.html">Degree Programs</a></li>
+          <li><a href="admissions.html">Admissions 2026</a></li>
+          <li><a href="faculty.html">Faculty Directory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Departments</h3>
+        <ul class="footer-links">
+          <li><a href="courses.html">Computer Science &amp; Engg</a></li>
+          <li><a href="courses.html">Artificial Intelligence &amp; DS</a></li>
+          <li><a href="courses.html">Information Technology</a></li>
+          <li><a href="courses.html">Computer Applications (MCA)</a></li>
+          <li><a href="courses.html">Basic Sciences &amp; Humanities</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Campus Office</h3>
+        <p class="footer-desc">
+          ABC College Campus<br>
+          Sitapura Industrial Area, Tonk Road<br>
+          Jaipur, Rajasthan — 302022
+        </p>
+        <p class="footer-desc">
+          <strong>Phone:</strong> +91 141 277 0000<br>
+          <strong>Email:</strong> info@abccollege.edu.in
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 ABC College of Engineering, Jaipur. All rights reserved.</p>
+      <p class="student-credit">Made by Krish Charan MCA I Sem 26JPSTDDMC053</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Scroll to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
